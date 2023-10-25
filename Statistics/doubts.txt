@@ -1,0 +1,32 @@
+todo:
+
+S.d why denom n-1
+sea-born, matplot
+see libraries of sn by shift control - shift+tab
+
+empirical formula - standard deviation
+
+pair plot
+heat map
+
+
+todo:
+employeee attrition -capstone proj - ola company has done same case study - why employees leaving job
+this is customer churning
+
+inferrential stats
+
+hypothesis testing imp
+
+
+z-value/ z-table
+
+z-score = x-mu/sigma
+
+significance level
+central limit theorem
+mode=3mode-2median
+
+book - linear algebra
+
+scaling of dataset?

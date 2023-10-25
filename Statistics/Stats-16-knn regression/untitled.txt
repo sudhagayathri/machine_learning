@@ -1,0 +1,3 @@
+knn regression:(k-nearest neighbourhood)
+-----------
+knn is used for both regression & classification

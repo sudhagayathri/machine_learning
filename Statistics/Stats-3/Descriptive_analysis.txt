@@ -1,0 +1,137 @@
+1. 2 types of data in stats
+    1. Quantitaitve(Numerical) - 1.Discrete
+                                2. Continous
+        2. Qualitaitve(categorical) - 1. Nominal
+                                      2. ordinal
+                                      
+object datatype means catgeorical
+int/float datatype means numerical
+
+
+1. Quantitaitve(Numerical) - how much
+
+    1.Discrete - counted as whole no - eg- how many projects u complete - can be 2 , nt 2.5
+    
+    sometimes discrete data can also be used as catgeorical data - if it has finite data, like in cylinder eg, no_of_cylinders is used as categorical
+    
+    2.Continous - no can be infinite precision - how many hrs u slept - 7hr 45 min - not integer
+
+
+2. Qualitaitve(categorical) - what type
+    1. nominal - no hierarchy - Gender - male,female
+        2.ordinal - can make a hierarchy - Satisfaction - very unsatisfied, satisifed
+                                            social status -rich, poor
+
+ordinal is required to know, becuase machine just understands numbers
+so based on category type - u can give it some no, and accordingly we can take action, like if we want to give priority
+
+
+varaince and standard devition(s.d)
+s.d = sqrt(varaince)
+
+
+Why S.d and varaince:
+just knwing mean is not enough
+
+
+But s.d and variane is also not enough
+we shud know Skewness and Kurtosis - for indepth interpretation
+
+
+Skewness -
+---------
+lack of symmetry
+symmetrical data - if data looks same on both left and right side of mean
+
+why skewness?
+--------------
+in ml we are majorly doing prediction
+Ml algo gives accurate data if its normally distributed
+Many ml models have pre-assumption for data to be symmetrical/normaly disributed
+ml alogorithm requires whether data s symmetrical/normally distributed, its easy to apply algorithm
+if not then certain steps shud be taken
+
+Bell curve-symetrical distribution is part of daily life - as age increase energy increas , but again in 40s energy will get down
+
+Means left and right wil be equally distributed against peak value
+
+for normal distribution - degree of skewness = 0
+df.skew() = 0 
+
+in real examples, degree of skewness will not be zero
+so we assume if it is btn range -3 to +3, it degree of skewness will be considered  zero
+
+coefficeinet of skewness:
+---------
+sk = (mean-mode)/s.d
+
+if no mode is defined
+
+sk = 3(mean-medain)/s.d
+--------
+
+
+Kurtosis:
+----------
+even if skewness is there we shud check kurtosis
+for normal distribution - kutosis will be +3 and -3, but for skewness it is 0
+even skewness doesnt give complete knowledge
+
+heavy tail -more outlier
+
+3 kutosis- 
+high peak
+heavy-tail(more outlier)/light tail
+flatness in peaks
+
+
+convexity of curve - kurtosis
+
+degree of kutosis = +7 to -7 is where we can apply ml model
+
+on a data set, kutosis and skewness shd be checked if it is proper dataset or shud it be modified
+
+
+----------
+if we have 2 peaks on curve - it is multi mode
+
+
+percentile - gives position
+measure of kutosis = (75p-25p)/(90p-10p) => p =percentile
+
+------------------
+many ml algorithms depend on normlaity assumptions
+
+if it it is not, we apply transformation approach - Box-cox technique - log,square root. cube root of data set - it will change shape of curve/histogram
+
+
+----------------------
+IMP-----------
+
+5 POINT SUMMARY:
+------------
+min, max, 25 percentile(1st quartile), 50 percentle(2nd quartile-median), 75 percentile(3rd quartile)
+
+df.describe() - gives all abve things
+
+Box plot -
+
+iqr(inter quartile range) = q3-q1
+outliers - q3+1.5iqr - q3-1.5iqr
+
+
+
+
+
+
+
+
+
+-------
+
+
+
+
+
+
+

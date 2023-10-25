@@ -1,0 +1,31 @@
+diff btn mutuallly exclusive and collectively exhaustive event?
+
+mutually exclusive:
+-----------
+if two events cannot occur simulataneously
+
+collectively exhaustive event:
+-----------------
+one of event must error
+set of events cover entire sample space
+
+-------
+Can training accuracy be less than testing accuracy?
+yes
+--
+will always training accuracy be 100%?
+no
+
+--
+to run ethical practices, we need ml
+to remove human biasness
+
+--
+
+standard normal distribution - mu=0, sigma=1
+
+diff btn r-squared and adjusted-r-sqaured:
+
+
+grid search cv?
+

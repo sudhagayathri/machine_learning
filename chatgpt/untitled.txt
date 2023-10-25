@@ -1,0 +1,8 @@
+AGI(Artificial General Intelligence):
+----------------
+highly autonomous human like system which possess cognitive abilities like human
+
+
+1.GPT - large language model(llm) , it is text to text
+2.DALL-E - text to image, neural network based model
+3.Whisper - audio to text

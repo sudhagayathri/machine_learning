@@ -1,0 +1,7 @@
+flair==0.11.3
+flask
+profanity-filter
+torch==1.12.1
+requests
+transformers==4.27.0
+ultralytics

@@ -1,0 +1,32 @@
+Diff btn list & tuple?
+tuple are immutable, they cant be changed at run time
+
+Diff btn pandas and numpy?
+pandas - is libray which handles data part- data structure part
+numpy - which handles analysis part
+which has more math libraries in it than pandas
+
+
+diff btn matplot and seaborn?
+matplot - its non-interactive, used for 2d
+seaborn - its interactive, used for 2d and 3d as well
+
+
+---------
+box plot - visual representation of 5 point summary
+5 point summary - numerical respresentation of box plot
+
+it simply gives about range/distribution of data
+5 point summary - mathemticl representation of box plot
+5 point summary - median, upper quartile, lower quartile, max, min
+median= 50% = average = q2=central value
+
+for even no median is average of 2 middle values
+
+25% - lower quartile = first half center = q1
+75% - upper quartile = second half center = q3
+
+while drawing boxplot, we have to take a scale and draw
+
+outlier - which affects central tendency of any distribution
+

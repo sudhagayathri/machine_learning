@@ -1,0 +1,23 @@
+1. easily understandable - even by layman
+2. presentable and professional
+3. interactive
+
+it can build Dashbaords- multiple visuals in one screen
+
+-----------
+Tableau is a visual interactive tool which converts data from individual sources to visuals
+-------
+why tableau:
+----
+1. speed - most complicated chart can be created less than a min
+2. user friendly
+3. eye cataching and interactive dashboard
+4. direct connection - easy update with single click based on real time data
+4. easy publishing and sharing - can be views on mobile with nothing pre-installed and fits screen size
+----
+tableau desktop
+tbaleau public - free 
+tableau online - on cloud
+tabeau server
+tableau reader
+tableau prep

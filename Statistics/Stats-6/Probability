@@ -1,0 +1,42 @@
+stochastic:
+
+with large no of trails the machine will able to predict the probability distribution
+
+- the probability of getting head wil be 0.5 in 1lakhh trials
+but in first 10 ,it can be 0.8
+
+
+probability and likelihood:
+population and sample
+probabaility - chance that a particular outcome can happen
+we expect out of 10 trails head probability - 0.5
+
+but when we picked sample out of 10 - head occurence is 1, 9 tail occurences
+then likelihood of this sample is biased/unfair
+we validate the event with probability- whether it matches/not
+
+likelihood is used in ml, we predict some data, but likelihood refer to what output we get actually
+
+Probability is used to finding the chance of occurrence of a particular situation, whereas Likelihood is used to generally maximizing the chances of a particular situation to occur.
+
+
+conditional probability:
+ex - the probability of scoring 90% overall after knwing per of one subject out of total 2
+
+Bayes theorem - extension of conditional probability
+-----------
+spam detection/sarcastic comments- we use Naive Bayes theorem
+
+bag of words model - 
+
+probability of email being spam will be some value
+but if email has some spam words like lottery etc, the probabity of email to be spam will change
+
+so probability of email to be spam after knowing it has word lottery is conditional probability
+
+we can have many assumptions(events) like words(p(A/B)), length of email(p(A/c)) etc which can change of probability of email
+these events can be considered independent
+
+-----------
+in logistic regression- likelihood concept is used
+

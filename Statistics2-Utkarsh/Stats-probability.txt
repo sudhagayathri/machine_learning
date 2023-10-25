@@ -1,0 +1,51 @@
+#nobody asks probablity questions - if they dont want to hire only then they ask
+
+--
+Random variable:
+
+
+probabilty mass function:
+
+representation x p(x) - separately seeing each 
+easier to read
+
+cumulative distribution function - cumulatively adding previous probabilties
+here u cannot see unique probability
+
+simple event- 
+non -simple event -when more than 1 condition is involved
+king + spade
+
+sample event- collection of all possibel events
+
+types of proability:
+a. a priori classical - based on universal fact 
+b. empirical - based on observed data - used in ml
+c. subjective - based on persons past expereince - its very risky - not used in ml
+
+mutually exclusive:
+-----------
+if two events cannot occur simulataneously
+
+collectively exhaustive event:
+-----------------
+one of event must error
+set of events cover entire sample space
+
+Bayes Theorem:
+----------
+there s a classifier in ml and algorithm built on bayes theorem
+
+multi condition probability - its extension of conditinal probability
+
+---
+Binomial distribution - works on probability of success and failure
+
+multinomial dsitriibution - 
+-------
+poisson dsitriibution - at constant rate - if lambda is there
+--
+extra forecasting - time series forecasting
+--------
+ARIMA algorithms
+Holts winter method algorithms

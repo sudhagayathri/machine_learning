@@ -1,0 +1,135 @@
+
+corpus -> a group of sentences like paragraph
+document -> each sentence is called document
+vocabulary -> dictionary containing unique words
+words -> tokens
+--------
+
+vectorization -> using simple techniques like below, where we convert word to number
+Embeddings -> if we use deep neural n/w to convert word to number
+
+
+types of vectorization:
+-------
+a. one hot encoding
+b. Bag of words
+c. Term Frequency Inverse Document Frequency
+
+a. one hot encoding:
+----------------
+describes each caytegory with 0 anf 1
+each unique word of corpus s expreseed as one hot encod..
+no concept of vocabulary s here
+adv : easy to implement
+----
+
+disadv:
+------
+1. sparse matrix (lot of columns)
+2. out of vocabulary
+3. since it is only 0 & 1, the semantic meaning is lost
+
+b. Bag of words(bow):
+--------------
+it collects all words from all documents and create a matirx called Document Term Matrix.
+combine all unique words by removing stopwords.
+
+Document Term Matrix:
+it gives collective picture with each document, which words are used in each document
+if word is repeated
+
+DTM(document term matrix) is Useful in Document Classifier 
+
+same disadv like one hot encoding
+
+interview:
+Order of words is based on freq and each word is called as feature
+
+python package that implements Bow -> CountVecotoriser
+
+--------------
+ngrams -> ngrams are continuos words/tokens used to create a single feature
+unigram - single word as feature
+biagram - if two words are used as feature - Data scientist, bcoz combinely its a different meaning, each word
+
+
+c.Term Frequency Inverse Document Frequency(TFIDF):
+---------------------------------------------
+it helps in understanding if word is used rarely or oftenly
+
+concept:
+----
+it gives lower weights to common word and higher weights to rare words
+
+term frq - popularity of word within a document
+            no of times term occurs in d1/total no of words in d1
+            
+Document freq - popularty of word in entire document
+            no of documents in whch ths word occured/total documents
+            
+Inverse Document Frequency = 1/Document freq
+this measures rarity of term in entire corpus
+
+weights distribution:
+--------
+term freq - it assigns higher weights to terms that appear more frequently
+inverse document freq -it assigns higher weights to rare terms in corpus/paragraph
+
+if a word has higher term freq and lower document freq it is rare word and TFIF score is very high
+if word has high term and high document freq -> common word ->TFIF score is low
+
+formula = TF *log(N/df) -
+df is document freq, N/df is inverse of document freq
+N- total no of documents
+
+if TFIDF is zero either 
+    the word is not present in that document or
+    the word is present in all documents,very common word
+    
+Adv:
+------
+it trims down important words and selects correct vocabulary in a document
+
+Disad:
+----
+vocabulary size - it requires to maintain term freq matrix, whch can be memory intensive
+
+------------------------
+Semantic Understanding:
+--------
+need to understand intent, body lang, underlying meaning
+it invloves uderstanding impliations, inferenecs, logic behind words and not just literal definitions
+understand meaning in their respective context
+
+undestanding contradiction btn literal meaning and intended meaning is part of semantic understanding
+
+Eg - he kicked the bucket - the machine doesnt understandn idiom
+
+Eg2 - Oh great! its raining, i dont need to go to ofc
+      Oh great :(, i cnanot go to shopping
+
+
+sequential models
+
+pos(part of speech tagging):
+-------------
+
+net(named entity tagging):
+-----------
+popular celebrities,cities, organizations
+
+-----------
+Data leakage
+fit_trandorm
+
+Due to the problem of “Data leakage”  the best approach is to split the data into training and testing and then apply the scaling/ vectorisation method
+
+
+
+
+
+
+
+
+
+

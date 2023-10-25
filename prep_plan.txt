@@ -1,0 +1,139 @@
+ml concepts:
+--------
+naive bayes concept
+voting classifier
+decision tree structure
+pca concept
+
+chi square test -april 29
+
+Regressors:(can be covered with project session)
+-------
+decision tree regressor
+random forest regressor
+
+
+projects to cover:
+----------
+hr attrition - very imp
+ml project session - 2 projects
+
+check what krish naik suggests
+
+one kaggle project
+mithilesh sir project
+
+
+NLP COVER COMPLETELY:
+-----------------
+ALSO PROJECTS
+CNN, ANN, RNN
+AND ONE OWN PROJECT
+TFIDF MATRIX
+
+
+BIG DATA TO BE COVERED------------
+
+
+python inter:
+--------
+1.all possibel combinations
+2.stars print
+Json file
+3.Source of date server data
+Deployment automation
+String program
+I am  :
+Address : 
+
+4.2 dataframes and join them inner join, outer join
+Merge
+
+---------
+nlp questions
+
+main voice to text conversation - detecting emotions
+vox
+whisper
+board room questions
+voice to text transformatin
+-------
+select_kbs
+
+We shudnt balance the dataset at the very beginning, its eye wash
+we shud check results, if it is not convinving only then it shud be done
+and if we balance we shud do only on training data
+
+feature_Selection approach
+
+---------
+inter questions:
+--------
+how auc graph is formed
+logistic regression multiclass - one to all approach
+grid search, randomised differrences, bayessian appraoch(cost effective
+Gradient boosting
+
+Pruning
+
+minmaxscalerDeep pruning
+N estimator
+Svm
+Overfitting, regularisation
+Cross validation
+Feature selection , pca
+Random state, how it works
+Chi square ,anova test
+Bagging and boosting
+Tf ydf matrix
+Naive bayes
+Ada booster working mathematical formula
+Balance
+-------------
+
+reversea string without inbuilt
+print no 1 to 10 list comprehension
+randm forsrt both
+adaptive boosting , gradient boostng
+svc
+k nearest neighbot
+bias and variance trade off
+svc what value gamma
+dst role in knn
+normalization vs standarization
+full form of roc - receiver operating characteristics curve
+data is inbalanced how random forest 
+diff btn standarad deviation and variance
+
+minmaxscaler
+variance inflation factor(vif)
+
+
+-------------------
+why linear regression not suitable for classification
+Assumption of logistic regression
+If model is in underfitting if we use regularisation techniques
+Can't use
+Auc =0.5 
+
+Palindrome
+X=12345
+Generators Map ,reduce, filter
+Decorators
+Left bit wise shift  operator 
+List, insert an number at 500 index
+Number 25 at 200 index
+
+Hyper parameters in linear regression
+Difference btn gradient boosting and gradient descent
+Using learning rate its calculating global minima for one function
+
+Anamoly detection
+Pca
+logloss
+
+Distance algorithm -cosine algorithm
+
+to check:
+-------
+Mathematical intuition of L1 and l2

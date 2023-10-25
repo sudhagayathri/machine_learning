@@ -1,0 +1,93 @@
+Deployment:
+
+Taking trained model, bundling together and making them ready for production
+
+what things shud be checked before taking model to deployment:
+-------------------
+1. Accuracy -FPR, TPR
+2. Model size - if model size is too large, it will take lot of time to download, more ram, heavy machine wud be required
+3. model shud be able to handle larger user input- scalability
+4. integration testing/Stability
+5. cost effective infrastructure - if evry prediction costs 1dollar, and if 1 lakh user comes it will incur too much cost
+6. Deployment and maintainance
+7. cpu requirements of model
+8. Latency - response time of model
+9. Security concerns - incase of image
+
+online learning - learning from live data, but its very risky
+uber and airbnb has some flavor of online learning but not completely
+
+
+https://winscp.net/eng/download.php
+
+-------------
+conda deactivate
+conda create -n deploy python=3.7
+
+if ssl related issues are faced
+C:\Users\<your-username>\Anaconda3\Library>bin
+
+copy this 
+
+optional:
+--------
+libcrypto-1_1-x64.dll
+libssl-1_1-x64.dll
+ 
+and paste to  anaconda3>DLLs.
+
+which conda -> for conda path
+
+for catpredictor - pip install -r requirements.txt(like npm install)
+
+Deployment:
+-------------
+1. in aws console, select EC2, launch instance with free trail , 1gb ram, 30gb rom
+2. transfer ur model folder in local to public ip provided
+	public ip -16.171.35.25
+	16.171.35.25
+	private ip -172.31.46.151
+	dns - ec2-16-171-35-25.eu-north-1.compute.amazonaws.com
+	
+	ec2-user@16.171.35.25:/home/ec2-user/
+	
+	ssh -v -i ml_keypair.pem ec2-user@ec2-16-171-35-25.eu-north-1.compute.amazonaws.com
+	scp -i ml_keypair.pem -r learnbay_deployment/catpredictor_deployment/catpredictor ec2-user@ec2-16-171-35-25.eu-north-1.compute.amazonaws.com:/home/ec2-user/
+	
+3. install dependencies like anaconda	
+	wget https://repo.anaconda.com/archive/Anaconda3-2020.07-Linux-x86_64.sh
+	bash Anaconda3-2019.03-Linux-x86_64.sh
+4. repeat conda deactivate, activate new env, run flask app
+5. opening port 5000 - By default in aws machine, all ports are closed except port 22(where the file transfer is done) for security purpose
+6. making model in aws server(0.0.0.0)- instead of local host
+
+
+7. sudo yum install tmux - host application without terminal , it will create one session with terminal and run appliactin even when terminal is closed
+   we wil create sessions
+   
+   tmux new -s ml_tmux_deploy
+   sudo yum install tmux
+Press Ctrl+B, leave it, then press D
+tmux new -s tmux_deploy
+tmux attach -t tmux_deploy
+tmux kill-session -t ml_tmux_deploy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

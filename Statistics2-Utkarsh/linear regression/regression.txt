@@ -1,0 +1,53 @@
+data can have target variable, no target variable
+
+
+Supervised-  if it has target varaible
+           - Clasification - target variable is discrete - Eg: Decision Tree, random Forest, Logistic Regression
+           - Regression - target variable is continous  - Eg: Linear Regression, ANN
+
+unSupervised-  if it has NO target varaible
+
+Evaluation metrics will be changed for Classification (Accurqacy,Auc, confusion matrix) and regression and unsupervised also
+
+
+linear regression:
+---------
+best fit line is where actual and predicted difference is less.
+
+for model know best fit line - it needs to calculate RSS(Residual sum of squares)
+
+RSS = summation(sqr(Act - Pred))
+
+Pred = w1x1+c
+
+RSS is cost
+
+we will find RSS for all possible lines and which wil give least value, will be choosen as best fit line
+
+------
+we cannot use parabola or paranomial funcrions as it can result in over-fitting
+
+Ordinary Least Square Method:
+
+r-squared values
+
+standarisation, outlier
+-----
+
+statsmodel, sklearn
+
+r-square and adjusted r-square
+
+r-square - variation in target varaible explianed by independent varaible
+adj- rsquare - per unit change in r sqr when we add/remove single variable
+
+f-statistics:
+
+r-square shud be more - is accuracy
+
+
+model accuracy fr this model - 71%
+
+more than 3 features - hyper plane
+
+

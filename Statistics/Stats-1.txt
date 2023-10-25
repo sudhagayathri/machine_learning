@@ -1,0 +1,81 @@
+component failures - automobiles
+50 per syllabus is stats - 50 per ml
+
+
+interviews - 4 rounds
+1 round - basic python and stats
+2nd round - basic dataset - what s interpretation - submit in 3,4 hrs
+3rd round - project
+service industry - retain customers
+industry - improve quality
+4th round - algorithm concepts-understanding, how good maths and stats  is
+
+45 days - stats + ml
+25-30 days - project
+
+extra topics:
+Balancing dataset
+pipeline
+
+
+Stats:(Data Analysis)
+Gujarat polling - 7cr population
+But they dont collect data from all 7cr , they just took frm 2000 people
+and  they make proper descriptive analysis
+
+science of learning frm data - science of making decision in uncertainity
+
+collecting data, organizing, analysing anf making menaingfl conversations with limited data
+
+representation in graph is req - histogram
+Gaussian shape, bell curve
+Matlplot, searborn - many data that willbe in tabular format, aftr graph it will help us understand problem statement
+
+EDA - Exploratory data analysis - it is using tools like seaborn to visualize etc
+
+outliers?
+
+Stats - Data collection, Evaluation(u cant give descriptive analysis based on accuracy, how we analyse model)
+
+Balanced dataset - 50 are healthy , 80 unhealty
+Imbalanced dataset - out of 100 - 90 healthy, 10 unhealthy
+accuracy shud not be seen
+type 1 error
+
+
+why stats:
+it will give 1st level descriptive analysis
+
+2 types:
+1. Descriptive - mean, median, mode - without attemping to draw any inferences
+	eg - we will do in 10 samples out of 100
+2. Inferential -
+	use descriptive here
+ use mathematical tools to forecast
+
+vacation in goa - 1 day rent bike , insurance 300
+grandfather - 1 cigarette 
+may amul ice cream celebrity
+
+
+there shud not be bias - sampling shud be taken properly	
+if we have 100 students - 80 boys, 20 girls
+sampling wihtout bias - 10 sqmaples - 8 boys , 2 girls
+
+Central Tendency:
+if data has outliers (extreme values) -we have to prefer median else mean
+
+interview:
+----------
+mean - if 10 per
+
+-----
+right skewed
+left skewed
+
+mode - on categorical dataset
+not a numerical data - missing category
+gender
+
+to ask:
+take data set - plot graphs- give description

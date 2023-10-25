@@ -1,0 +1,8 @@
+1. check what is value counts-are the categories distribution equal
+2. split dependent and independent variables
+3. do scaling for all dependennt varirables - convert scaled array to dataframe
+4.check for corr, if > 0.9 try removing
+5. split data i train, test
+6. fit data
+7. predict data
+8. model evalauaations through accuracy, cnfusion matrix etc

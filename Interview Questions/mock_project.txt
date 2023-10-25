@@ -1,0 +1,59 @@
+algo:
+------
+new:
+----
+xg boost
+ada boost
+svm
+naive byes
+pca - pricipal
+grid searchcv, randomised search cv
+
+logistic regression
+Random forest
+Decision tree
+
+cover hyper parmeters like 
+
+evrything thats there in notebook
+    n-estimators
+    hyper params
+    
+
+entropy
+loss fns of classification
+mean square error
+pruning
+
+auc, precision, recall
+
+python coding questions - binary converter
+    diff btn list and array
+
+VOTING CLASSIFIER - ASK EKBAL QUESTIONS
+PPT preparation - IMP
+
+
+priority-wise:
+--------------
+knn algo
+Naive Bayes
+Voting Classifier
+PCA
+Feature Engineering
+
+Revise All alogorithms
+
+Go through ppt
+Go through code
+
+Statistics revise
+
+ppt questions:
+------
+sampling techniques
+
+
+
+
+

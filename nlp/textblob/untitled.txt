@@ -1,0 +1,25 @@
+Textblob stands on support of nltk 
+
+TExtblob supports high user-friendly,with inbuilt classifiers
+
+But NLTK is powerful, extensive txt processing with good accuracy
+
+But spacy is much better than nltk as it is built on Deep Learning
+
+
+Spacy & nltk diff:
+----------
+it is fast,accurate, used for large text models, gives production-ready models
+
+it doesn't support multiple languages, but nltk provides support
+
+Spacy does Dependency parsing, Integrated word vectors(through word2vec) but cant done by nltk
+
+spacy has better acuuracy than nltk
+
+Only 
+
+Coreference resolution - cannot be done by both
+    referncing many things together which is done by 
+    
+    

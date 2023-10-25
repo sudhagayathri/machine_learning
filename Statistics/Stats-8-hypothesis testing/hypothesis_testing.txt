@@ -1,0 +1,76 @@
+hypothesis_testing - is form of statistical analysis to say whether conclusion made is not by chance
+
+is is important to check whether whatevr sample we got is not favorable/biased, it is actually represneting entire population/not
+
+when we do hypothesis_testing we conclude abot data is biased/not
+
+terminology:
+null hypothesis - nothing is extraordinary, evrything is fair - H0
+alternative hypothesis - scientist cliam - H1,Ha
+
+Always take what scientist/researchers claim as alternative hypothesis, the opposite is null
+
+sigificance level:
+----------
+its accepted level of error
+declared with alpha
+on what basis we declare it
+we choose a sigificance level,it is probability threshold, based on that we reject null hypothesis
+
+in generral, if we reject null hypothesis, alternate hypothesis is accepted
+
+but if we reject null hypothesis, its not guarenteed that we accept alternate hypothesis 
+
+p-value:
+----
+we calculate p-value, to reject null hypothesis.
+
+ The p value, or probability value, tells you how likely it is that your data could have occurred under the null hypothesis.
+ The smaller the p-value, the stronger the likelihood that you should reject the null hypothesis. 
+ 
+ A small p value (<=0.05), you should reject the null hypothesis-
+ if pvalue s more than alpha, i.e., accepted lvel of error , chances of failure is more than accepted lvel of error
+ -then u accept null hypothesis
+ 
+
+ 
+A large p value (>0.05), you should not reject the null hypothesis
+
+the scientist goal is to reject the null hypothesis
+
+
+making decision:
+-----------
+critical value approach
+p-value approach
+
+type-1 and type-2 error:
+-----------------------
+type- 1:
+----
+eg - covid reseracheers ask for funds frm finace dep stating temperature has impact and they want to implant refrigerators
+
+u reject null hypothesis when it is actually true
+u send some money from finance dep when it is not true
+type-2:
+--------
+u failed to reject null hypothesis when it is actually false
+
+application of hypothesis testing in ml:
+-------------------------
+1.in ml, we see whether column is playing significant role/not,
+2.also in supervised ml, where we approximate target fn, map inputs to outputs
+3.choice of alogorithm(linear regression/ neural n/w)
+4. test that assumes data is normally distributed
+5. compariosn of two samples
+
+q-q(quantile) plot - to check whether data is nomally distributes/not
+
+One tail Test and Two tail test:
+===================================
+
+we are basically looking for =,>,< and based on that we decide
+if it has = sign, it can be either more or less,hence can be consider two tail test- so alpha is split on both sides - 0.025
+> / < -one tail test- entire alpha is considered - 0.05
+
+

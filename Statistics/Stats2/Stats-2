@@ -1,0 +1,61 @@
+Mean, median doesnt give complete idea abt data set
+eg - class of 100 students, if avg score is 80 , it doesnt give idea what is lowest score
+
+Hence we go for Standard Deviation
+
+Dispersion/spread:
+---------------
+Standard Deviation ===> avg dst btn each quantity and mean value
+How much data is deviated from mean value
+if S.D is low, points are close and dispersion is not much and viceversa
+eg - in class mean is 80, but least score is 10 , S.D is high
+
+Best approach is S.D shud be low
+if there r 2 pizza companies, with their delivery times
+1st pizza - min time - 5, mean - 50, max- 90
+2st pizza - min time - 20, mean - 50, max- 70
+
+in this case, we will prefer 2nd pizza
+might be 1st can deliver in min 5 min, but in worst case it can take 90 min
+
+
+Sample and Population:
+
+Standard Deviation formula:
+
+formulas:
+--------------
+sample - 100 out of 8000
+Population - all 8000 data
+
+sample - s=  sqrt((summation(X-x_)^2)/n-1)
+Population - sigma =  sqrt((summation(X-x_)^2)/N)
+
+X- each individal value
+x_ - mean
+n/N  -total observations
+
+degree of freedom - no of try/attributes to complete calculation
+
+Question:
+--------
+1. why sample is divided by n-1, instead of n
+
+to reduce the bias, we will just use one less degree of freedom
+eg - if we have 10 samples, and mean is 80, while calculating standard deviation we will exclude one sample
+because while making any samples there can be any bias while bias
+while doing this (n-1) so that we make it close to Population
+
+
+Varaince:
+----------
+s2=sqrt((summation(X-x_)^2)/n-1)
+sigma =  sqrt((summation(X-x_)^2)/N)
+
+variance is just square of value of s.d
+
+variance is just like s.d, it will minimalise n
+
+
+
+

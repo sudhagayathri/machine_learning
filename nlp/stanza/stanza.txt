@@ -1,0 +1,123 @@
+stanza:
+-------
+it is less explored library
+similar to spacy it also uses pre-trianed models
+its also based on deep learing model
+it works on multi-lingual langauges(65 langs)
+
+features:
+--------
+tokenization
+multi lang
+part of speech tagging
+named entity recognition
+Dependency parsing
+Constituency parsing
+Morphological analysis - finding root word
+Language identification
+Near real time processing
+sentimental analysis
+
+Dependency parsing:
+--------
+in a sentence, it defines relationship btn head words and words that modify those heads
+Eg - A black car 
+here car is head and black is word that defines the head
+
+Constituency parsing:
+----------------
+in a sub-phrase(constituents) it defines relationship btn head words and words that modify those heads
+
+
+Stanza processes everyting in pipeline structure
+
+word2vec:
+----------
+it is a vectorization technique,it takes lot of data in backend, applies deep learning technique
+
+Based on the data it processed, it not only understands unique identity but also identifies context of word, such that if 
+2 words are similar in meaning, their vectors shud be close to eachother
+
+word->vector
+
+this not only assigns vector to word, it tries to provide context of the word, underlying meaning
+word embeddings eventually help in in establshng association of word with another similar meaning word thrugh created vectors
+
+
+this is done by below 2 techiques:
+
+1.CBow(continuous bag of words):
+--------------
+target word is predicted based on its context.
+context is window of surrounding words
+
+Eg - the cat sat on the mat
+
+here it will mask target word, consider it as sat
+
+if window size=2, it will take 2 words on either side of the masked word
+if we increasse window size it will give better context, but it may take more time
+
+now the context words are - the, cat, on, the
+--------
+i.e, the target word is predicted based on the context words
+i/p -context words - the, cat, on, the
+o/p - target - sat
+
+--------
+Like this, it will go on to create context words for each target words from the text given.
+
+it will get trained on huge data of inputs and at certain point for example, it will understand
+king and queen are closely related and it will create their vectors close to each other in a multi-dimensional representation
+
+
+Finally it will create vectors of word that will talk aboout menaing of word
+
+
+2.Skip-gram:
+-------------
+its opposite of cbow.
+It predicts surrounding context words based on target word
+text - the cat sat on the mat
+i/p - sat
+o/p - the, cat, on, the
+
+here cat can change but common part like on,the will remain same in every context
+
+
+Gensim:
+--------
+its the library that offers word2vec package
+
+pre-trained embeddngs are used for word2vec. dimension 300
+
+
+How to know if library is doing good/not--
+
+Cosine Similarity:
+--------------------
+its metric to measure how similar two vectors are.
+Its calculated by cosine of angle btn 2 vectors which falls btn -1 to +1
+
+if 2 vectors are close eachother, means the vectors are plotted close to each other, angle is 0 or very less,
+then consine similariy =1(near to 1
+
+similar way, cosine simil=0, then words are not similar, 90 deg angle btn vectors
+
+if vectors are antonyms,opposite, angle is 180 deg, cosine is -1
+
+
+Cosine Distance = 1-Cosine similarity
+
+So higher the cosine value, higher the similarity, less the distance
+
+
+
+
+
+
+
+
+
+
+

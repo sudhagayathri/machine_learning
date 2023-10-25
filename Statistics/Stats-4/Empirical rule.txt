@@ -1,0 +1,34 @@
+Empirical Rule:
+----------------
+A normal distribution is where mean,median and mode(all three) is at center
+
+1st standard deviation(s.d) - mu + sigma / mu -sigma
+2nd standard deviation(s.d) - mu + 2*sigma / mu - 2*sigma
+
+A normal distribution is a density curve where total area is 100%
+
+there are certain observations infered frm empirical rule- 
+
+68 - the probability that randomly selected area upto 1 s.d is 68%
+
+95 - the probability that randomly selected area upto 2 s.d is 95%
+
+99 - the probability that randomly selected area upto 3 s.d is 99%
+
+remaining %(approx 1 %) is outlier
+
+
+
+-------
+mn = 80
+s.d 10
+
+47.5 +34
+
+15 - 36c
+s.d - 3
+39 and 42
+
+68-95
+15 - 36
+x - 33

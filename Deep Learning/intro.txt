@@ -1,0 +1,30 @@
+We use Tensor Flow, dont use pytorch
+
+
+Cncepts:
+--
+History
+Dl vs ML
+GPu vs cpu
+TensorFlow
+ANN(Artifical Neural Network)
+CNN(Convolutional Neural Network) - designed specially for images
+RNN(Recurrent Neural N/w) - designed for continous, timeseries data, continous data
+
+Dl:
+----
+Absorb the data in more depth through multiple layers
+
+AI->ML->DL(&NLp)
+----------
+Analyticsvidya, machinelearningmastery
+
+Datasciencetowards , geekforgeeks
+
+------------------------
+
+rest written in notebook, reverse 
+
+
+
+

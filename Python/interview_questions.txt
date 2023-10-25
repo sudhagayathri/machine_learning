@@ -1,0 +1,59 @@
+diff btn with open and open in file?
+The with statement works with the open() function to open a file. Unlike open() where you have to close the file with the close() method, the with statement closes the file for you without you telling it to. This is because the with statement calls 2 built-in methods behind the scene – __enter()__ and __exit()__ .
+--------
+why python loops are slower than C?
+----------------
+bcoz of the dynamically typed nature of Python.
+while pythin is trying to execute any loop, it has no idea whether all data passed for loop is of same data type
+so it has to make  datattype check everytime before running
+
+whereas C is strict datatype and allows arrays only with one datatype
+
+vectorization - Numpy:
+------------------
+ NumPy allows arrays to only have a single data type and stores the data internally in a contiguous block of memory. Taking advantage of this fact, NumPy delegates most of the operations on such arrays to optimized, pre-compiled C code under the hood.
+ 
+ in numpy underlying code s written in c
+ 
+ arr_a = np.array(li_a)
+arr_b = np.array(li_b)
+
+def multiply_arrays(arr_a, arr_b):
+	arr_a * arr_b
+    
+    here numpy doesnt make use off loops 
+    How does this happen? This is because internally, NumPy delegates the loop to pre-compiled, optimized C code under the hood. This process is called vectorization of the multiplication operator. Technically, the term vectorization of a function means that the function is now applied simultaneously over many values instead of a single value, which is how it looks from the python code ( Loops are nonetheless executed but in C)
+ 
+----------------
+why numpys are faster than list?
+----
+numpys are 5-100 times faster than list
+
+Element are stored in Contiguous Memory locations in NumPy.
+The items inside a NumPy array are stored next to each other in the memory which is another reason for it being fast.
+Numpy arrays are densely packed arrays of homogeneous type
+
+On the other hand, Elements of python lists are not necessarily next to each other in the computer’s memory. The list that you create just holds references to the actual locations of those elements.
+
+
+NumPy arrays are stored at one continuous place in memory unlike lists, so processes can access and manipulate them very efficiently. This behavior is called locality of reference in computer science. This is the main reason why NumPy is faster than lists. Also it is optimized to work with latest CPU architectures.
+--------------------
+diff btn time and timeit:
+----------
+At any given time, the Central Processing Unit (CPU) is used and shared by many processes. Measurements taken using time.time are relative to what we call wall clock. This means that the results are dependent to the other processes that were running at the time the test was executed. Therefore, in many cases the results produced by time.time are not as accurate as possible.
+
+
+timeit is more accurate, for three reasons:
+
+it repeats the tests many times to eliminate the influence of other tasks on your machine, such as disk flushing and OS scheduling.
+it disables the garbage collector to prevent that process from skewing the results by scheduling a collection run at an inopportune moment.
+it picks the most accurate timer for your OS, time.time or time.clock in Python 2 and time.perf_counter() on Python 3. See timeit.default_timer.
+
+-----------------
+diff btn randn and rand
+
+First, as you see from the documentation numpy.random.randn generates samples from the normal distribution, while numpy.random.rand from a uniform distribution (in the range [0,1)).
+
+--------------
+diff btn loc and iloc?
+

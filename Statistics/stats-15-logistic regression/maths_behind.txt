@@ -1,0 +1,18 @@
+how our model interprets data?
+
+Logistic regression(sigmoid fn):
+-----------------
+
+
+its for statistical binary classification only
+we will not rely on this even for multi class, shud be used for two class only
+
+its having a Decision Boundary
+y-axis is probability
+
+if probability > 0.5 ->class 1
+if probability <0.5 ->class 0
+
+there is a decision boundary at 0.5
+
+as prob cant be more than 1, and not less than 1, it follows sigmoid curve(s-shaped curve)

@@ -1,0 +1,82 @@
+Slide 1:
+-------
+we have been given with in_drive coupon recommendatoin data
+where people with different set of characteristics like age, marital status, driving with etc are given
+And there are different coupon types- like Bar, coffee, restaurant is given
+
+We have to classify whether the coupon will be accepted/not
+
+EDA - Balnced data set:
+-------
+if data is imbaanced sampling techniques shud be applied 
+
+Todo: sampling techniques
+
+Missing values:
+----------
+can be done with -
+1. either completely removing that row/column
+2. by Imputation - by filling values
+   for numerical - mean if no outlier/median
+   for categorical- mode
+
+
+Outlier treatment:
+------
+1. either by removing that data
+2. Flooring or caption - replacing them with suitable value
+    IQR:
+    --
+    Q1 = df1.quantile(0.25)
+    Q3 = df1.quantile(0.75)
+    iqr = Q3-Q1
+    upper_fence= Q3+1.5*iqr
+    lower_fence= Q1-1.5*iqr
+    print('upper fence \n', upper_fence)
+    print('\n lower fence \n', lower_fence)
+    
+    replacing with upper and lower fence
+    
+    z-score:
+    ---
+    #upper_fence=mean+3sd(standard deviaition)
+    #lower_fence=mean-3sd(standard deviaition)
+
+
+Univariate Analysis:
+--------------
+the graph tells 
+    - what type of people are more in number, count
+    - what is their acceptance per, classification
+    
+Ive plotted along with percentages so to get better inference
+
+Copuon Distribution is not even required in snowy waeaher
+
+coupon wise - Lot of coffee huse coupons is given ,---,bt ...this info adds value in decisoin making
+
+
+bivariate analysis:
+--
+coupon_freq: this vlaue we got by feature_engineering , will see in next values
+But its inference plays a huge role
+
+
+Coorelatio of features:
+--------
+if 2 variable provide same information to the model, one of them can be removed
+todo:
+
+
+feature engineering:
+--------
+
+todo - one hot encoding
+
+Model Building:
+--
+Now its ready for model building
+
+
+Auc:
+--

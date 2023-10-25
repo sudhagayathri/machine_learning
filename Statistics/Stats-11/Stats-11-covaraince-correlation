@@ -1,0 +1,75 @@
+correlation:
+---------
+how one varaible will behaves with another
+
+qq plot?
+
+
+
+linear relationship:
+most of observations wil fall in near or on straightline
+
+1.Strong postitive linear relationship: approx pearson coffieicint of coorelation - +0.92
+good pearson coffieicint of coorelation - +1
+
+2.Strong negative linear relationship: while one varaible increases other decreases - 
+approx pearson coffieicint of coorelation - -0.92
+good pearson coffieicint of coorelation - -1
+with no of years price of car decreasing
+
+
+3.weak linear relationship: points are far away/non-linear
+not easily predictable
+approx pearson coffieicint of coorelation - 0
+
+4. non-linear relationship: x^2
+
+    curved shape/parabola
+
+5. monotonic relationship: it goes in same direction but not in constant rate
+
+
+covaraince and correlation:
+covaraince- tells direction btn 2 numerical data
+-----------
+eg- height and weight
+
+limitation: it doesnt tell about strngth of relationship 
+
+correlation:
+it provides direction along with strnght of relation
+if degree of correlation is +1 - linear postive
+if degree of correlation is -1 - linear postive
+if degree of correlation is 0 - non linear
+
+------
+Any normal distriution/ symmetrical data will come under linear relationship
+--
+pearson vs  spearman correlation coeffiefcint:
+--------
+if both columns data distribution is symmenttrical then we use pearson , it gives good results else spearman
+if data is not normally distributed its better to use spearman approach
+
+
+scale of correlation coeefieicnet:
+it ranges from 0 to 1
+
+if correlation coeefieicnet btn 2 columns >=0.9, 
+its high degree of muti collinearity
+---------------------------------
+it means both columns give same information, we can drop one, this is concept of feature engineering
+
+
+df.corr()
+
+
+variance inflation factor(vif):
+
+vif >=10, that particular column has high multi collinearity with any one column in dataset
+it atleast gives that half data, it doesnt say with which it have
+
+
+diff btn degree of correlation and vif:
+degree of correlation  gives complete idea about how one column has correlation with other
+vif just says that particular column has high multi collinearity with other column
+vif will be useful with dataset having high columns, drop columns test accuracy, if it doesnt chnage

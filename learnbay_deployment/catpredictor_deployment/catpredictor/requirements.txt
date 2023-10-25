@@ -1,0 +1,8 @@
+gunicorn
+tensorflow-cpu==2.1.0
+flask==2.1.0
+numpy==1.17.5
+h5py==2.10.0
+pillow
+protobuf==3.19.6
+MarkupSafe==2.0

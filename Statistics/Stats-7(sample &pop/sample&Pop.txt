@@ -1,0 +1,74 @@
+collection of sample is to interpret something abt larger population
+
+if we want to know cutoff marks of exam, instead of asking all stunts, we select 2 exam centers and get
+
+
+Random Selection will be one approach to choose sample,here biasness also will be less
+
+For trainign and testing sample also we use random selection approach
+
+a. Probability sampling:
+===========================
+1.simple random selection - very randomly selected
+2.systematic random selection - arrange population in some order, choose random start interval and pick people in regular intervals(with interval of 2 select one)
+
+3.Stratified random sample: incase of imbalanced dataset we must apply this sampling process only
+
+this will ensure training dataset will happen properly
+split population in groups, random selection frm each grp
+
+trained and testing sample
+
+ths will help in training model with all types of inputs from different categories
+
+eg - we have 1000 problems, 800 frm algebara, 200 frm calacus
+
+in random smapling there can be chance of dataset not to be balanced, 
+if 10% of population is selected, it can choose 95 frm algebara and 5 frm calculus, its not correct, 
+the machine training model will not learn abt cacculus properly, and hence its testing model will fail
+
+in real life all samples are unbalanced, hence we have to choose proper sampling approach so that it gets trained on all categories
+genrally 80% will be training data and 20% will be testing data
+
+
+we cannot use this in regressin type of models(find salary etc) - because we cannot/split divide into classes because of continus data
+can be used in catgorical type of models
+
+4. cluster sampling- its not for learning, its data mining concept, ther is no training , testing
+used in unsupervised machine learning
+used in targeted approach
+
+if a marketing person is there, and if they need to speak wit people above 20 years
+
+b.Non Probability sampling:
+
+-----
+Confidence level and Margin of Error:
+-----
+with increase in confidence level, confidence interval also increases
+
+candy example:
+choose how many candies are there in box
+
+exactly 500 - confidence level will be around 60%
+if it is said btn 400 to 500  -confidence level can be around 70%
+if it is said btn 300 to 500  -confidence level can be around 80%
+if it is said btn 200 to 500  -confidence level can be around 90%
+
+here as u increase the range on the left side(confidence interval) , the confidence level increases
+
+so as confidence interval increases, confidence level increases
+
+
+confidence interval = point estimate +/- margin of error
+
+if mean is 490, margin of error is 20, ci is betwen 470 to 510
+
+point estimate- nothing but sample mean
+
+there is no influence of size of population on the above
+
+with increase in z-table, margin of error increases, confidence level increases, confidence interval also increases
+
+
+

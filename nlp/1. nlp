@@ -1,0 +1,174 @@
+NLP:
+----------------
+wherever text-data/words come in picture-nlp comes
+nlp focuses on interaction btn computers & human language
+it involves in development of algorithms that enables computers to interprets words, but also try to comprehend context around it
+---------
+
+use cases of nlp:
+------------------
+1. Text Classification - eg- categorizing  mail to social, spam
+2. Sentimental Analysis - here also we do classification
+3. Named Entity Recognition - extracting names, location, organizations etc
+4. Machine Translation - 
+5. Question Answerigng - chatbot, codex
+6. Text Generation - generating content like author
+
+is nlp part of ml or dl?
+--------
+it cud be part of either ml or dl
+higher order models(dl)
+
+OCR:
+--------
+Optical Character Recognition (OCR) is a popular technique used to extract data from scanned documents(images)
+
+
+Steps of nlp:
+----------------
+break paragraphs to sentences -> sentencces into words -> break ur word - initial preprocessing,tokenizing
+becoz machine doesnt understand words -> each word is converted to number - this is called vectorization
+word2vec- higher level
+ml use cases(string similarity) - anlaysing each word with context and meaning
+	- boy ->girl, men -> women (understand context like human being)
+
+stop words - words which are not providing any sense like - we are, unlike main words
+
+common libraries to handle text data:
+-----------
+nltk
+spacy
+textblob
+
+
+
+text pre -processing:
+--------
+here main word -> root word 
+
+cleaning -> tokenization-> stop words removal -> pos(parts of speech) tagging -> NER(named entity recognition, like recognizing places,cities) -> stemming & lemmatization(convetng to root format)
+
+text cleaning:
+-------
+1. remove special characters
+2. lower casing
+3. tokenization
+4. remove stop words
+
+stemming - process pf reducing base word to root word
+stemming is very fast
+
+stemmer:
+--------
+porter stemmer
+lanchester stemmer
+
+but it may end up giving meaningless word, it s so aggresive and doesn;t have dictionary
+
+snowball stemmer is better
+
+Lemmatizatoin: (also finds root word)
+---------------
+its more meaningful than stemming, it gives meaningful words
+at backend it has dictionary of words
+
+wordnetlemmatizer - mostly usd but slow - 
+lancasterlemmatizer - lancasterlemmatizer - its faster but can produce non-dictionary words
+
+--------------
+basically for classificaiton we can use stemmer, for usecases whre we need acuuracy like transaltion, chatbot
+we shud use lemmatization
+-----------------
+todo - scaling in ml model?
+
+usecases:
+-------
+stemming - spam classificaton, review classification
+
+lemmatizaton(where we cant cmpromise with meaning) - text summarization,lang transaltion, chatbots
+
+Vectorisation or word embeddings:
+----------------
+process of converting tokens to numbers
+
+
+text pre-processing steps:
+--------------------
+Text Data clening -> Tokenization -> Token Processing -> Vectroization
+
+
+Text Data cleaning ->  removing punctuations, stop words
+
+Tokenization -> breaking sentences/paragraphs to single word
+
+Token Proessing -> pos, ner, stemming/lemmatization
+
+basic nlp terminlogy:
+------------
+corpus    -> grp of sentences like a pragraph
+Documents -> each sentence
+Vocabulary -> dictionary containing unique word
+words
+
+methods of vectorization:
+--------
+one hot encoding
+bag of words
+tf-idf
+word2vec
+
+
+Disadvt of one hot encoding:
+-----------------
+out of vocabulary - any word not present in training data set,coming in testing, it wud fail to identify
+creating lot no of columns 
+
+to be checked:
+------------
+tagging ->sadha ->sudha
+
+
+sadhb enterprises -> sudha enterprises 
+subtokenization-> sentence piece tokeniza(dl
+pyspellchecker
+sadha hotel
+
+sadha restaurant -> sadha hotel
+
+
+amul - bmul
+
+
+
+with multiple words
+
+cafe coffee day -> spell mistakes
+
+
+Latent semantic indexing
+----------------------
+ (also referred to as Latent Semantic Analysis) is a method of analyzing a set of documents in order to discover statistical co-occurrences of words that appear together which then give insights into the topics of those words and documents.
+
+Two of the problems (among several) that LSI sets out to solve are the issues of synonymy and polysemy.
+
+synonymy- how many words describe same meaning
+polysemy - how many different meanings same word has
+
+
+SVM & SVD
+
+Amrita: 9966632728
+
+
+
+
+dl models -> ann, cnn
+-----------------------------
+
+chatgpt - sentence piece tokenization
+
+
+
+
+
+

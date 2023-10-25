@@ -1,0 +1,131 @@
+Sample and Population:
+Standard Deviation formula:
+
+formulas:
+--------------
+sample - 100 out of 8000
+Population - all 8000 data
+
+sample - sqrt((summation(X-x_)^2)/n-1)
+Population - sqrt((summation(X-x_)^2)/N)
+
+X- each individal value
+x_ - mean
+n/N  -total observations
+
+degree of freedom - no of try/attributes to complete calculation
+
+Question:
+--------
+1. why sample is divided by n-1, instead of n / What is Bessels correction
+
+to reduce the bias, we will just use one less degree of freedom
+eg - if we have 10 samples, and mean is 80, while calculating standard deviation we will exclude one sample
+because while making any samples there can be any bias while bias
+while doing this (n-1) so that we make it close to Population
+
+this has been proposed by Bessel
+--------
+2. Diff btn varaince and skewness?
+
+variance - amount of variability
+skewness - direction of variability
+
+In business - variance is widely used - like share market -  we wil not invest in such stocks where varaince is very high
+in medical, life science skewness is widely used(bcoz of outliers, it plays important factor)
+
+
+-------
+in pre-processing data, what is diff in mean,median or mode approach?
+for mode approach we have to pass 1st mode
+
+df1['Dept'] = df1['Dept'].fillna(df1['Dept'].mode()[0])
+
+----------------
+what is magic command of matplotlib?
+%matplotlib inline - this is not required in current version of jupyter, as it can plot inline even if it is nt given
+autopct is another magic command for pyplot
+
+wherever single percentage/ double percentage that will be magic command
+
+----------------
+sklearn label encoder - diff btn fit, transform and fit_transform
+fit - it will calculate parameters from trianing data set
+fit - fit will be used in algorithm , we wil not expect results
+----------------
+
+Probability - Deterministic - This means that a given set of input data will always generate the same output. can easily understand pattern
+            Non-deterministic - gives different outputs for each trail - cannot understand pattern
+            even after collecting lot of samples, if we are not abel to predict pattern
+            
+            
+-----------
+stochastic randomness:
+
+with large no of trails/observations the machine will able to predict the probability distribution
+
+- the probability of getting head wil be 0.5 in 1lakhh trials
+but in first 10 ,it can be 0.8
+
+stochastic markov chain - stochastic model describing a sequence of possible events in which the probability of each event depends only on the state attained in the previous event.
+used in medical field, text processsig
+
+--------------------
+Stratified random sample: incase of imbalanced dataset we must apply this sampling process only
+
+split population in groups, random selection frm each grp
+
+trained and testing sample
+
+ths will help in training model with all types of inputs from different categories
+
+eg - we have 1000 problems, 800 frm algebara, 200 frm calacus
+
+in random smapling there can be chance of dataset not to be balanced, 
+if 10% of population is selected, it can choose 95 frm algebara and 5 frm calculus, its not correct, 
+the machine training model will not learn abt cacculus properly, and hence its testing model will fail
+
+in real life all samples are unbalanced, hence we have to choose proper sampling approach so that it gets trained on all categories
+genrally 80% will be training data and 20% will be testing data
+
+-----------------
+Confidence level and Margin of Error:
+-----
+with increase in confidence level, confidence interval also increases
+
+candy example:
+choose how many candies are there in box
+
+exactly 500 - confidence level will be around 60%
+if it is said btn 400 to 500  -confidence level can be around 70%
+if it is said btn 300 to 500  -confidence level can be around 80%
+if it is said btn 200 to 500  -confidence level can be around 90%
+
+here as u increase the range on the left side(confidence interval) , the confidence level increases
+
+so as confidence interval increases, confidence level increases
+
+confidence interval = point estimate +/- margin of error
+point estimate- nothing but sample mean
+
+there is no influence of size of population on the above
+
+------------------
+diff btn sklearn model and ols model:
+#in sklearn model, by default it will take intercept(c) value,
+#but in OLS model we have to add the constant(intercept
+
+----------------
+what is local minimum - Gradient Descent?
+where we reach by adjustng sum of squared error is smallest\
+
+
+-----------------
+diff btn pearson and spearman corrrelation coeff?
+pearson - is sensitive to outliers - so this shud be used when we dont have outliers, linear - tends to move in same direction but in cosntant rate
+spearman - can be used when it has outliers, in montonic distribution - tends to move in same direction but not in cosntant rate
+
+
+
+
+

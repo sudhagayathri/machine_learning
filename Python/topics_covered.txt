@@ -1,0 +1,12 @@
+Dictionaries
+Modules
+Functions
+Exception handling
+regex
+Numpy
+Pandas
+---------
+Topics with assignements:
+-------------
+Lists
+Tuples

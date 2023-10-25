@@ -1,0 +1,91 @@
+
+model evaluation:
+
+
+Regression
+classification
+
+if we are wanted to find price of  house, where we have size of house, location, city, house price
+here house price is dependent varaible
+
+we have 2 variables in any data set
+a. dependant variable
+b. independent variable
+
+only varaible will be dependent varaible, and that wil be output varaible/dependent varaible/target variable(y), others are input variables
+
+in ml, all input varaibles are independent varaibles
+
+for whichever we are choosing model to predict , that wil be dependent variable, other data will be independent  variables
+
+2 types of model approach
+
+Accuracy shud be considered for regression, not for Classification
+Regression -  if output is continous data - eg to predict price of car
+            85 per accuracy is considered as good model
+            
+Classification - if output is binary/ is any category - eg- 1. whether person will get bank loan/not
+                                                            2. wine classification
+
+based on type of problem statement, we choose approach
+
+
+medical applications - most of them are through image detection
+
+lung density, lung tissues
+ecg
+sepsis shock
+============
+
+1. Significance:
+-----------------------
+
+to predict the data, in every data set we have one significant data
+
+eg - in predicting price of house, size of house is the significant data
+
+
+2. Feature Engineering:
+-------------------------
+
+to find potential customer - 
+
+in online we do lot of activities- there will be 300 columns of data
+out of this there will be many unsignificant columns of data, which might increase processing time for model
+
+so after dropping insignificant columns but stsill maintainign its performance is feature engineering
+
+
+Clasification model Evalaution:
+------------------------
+
+eg - a covid patient , where model predicts no covid and vice-versa
+
+confusion matrix-
+------------
+Actual if equal to prediction its true, else false
+
+
+Prediction(Lab report) 0(negative report)  1(Positive report)
+
+1.for whatever data we are building model its value can be takne as 1(out of covid and non-covid, covid can be takn as 1, non-covid as 0)
+2. Data as Actual, Predicted
+3. X-axis as precited, y-axis as Actual
+4,left diagonal to find out type-1(False postive), and type-2 error(False Negative)
+
+ideally in health care, type-2 is not acceptable(actuall postive, but predicted negative - FN(false negative), in that case type-2 will be reduced, but type-1 will be automatically increased
+
+
+Validation of classification model:
+a. Accuracy
+b. Confusion Matrix
+c. Classification Report - 
+        1. Recall 2.Precision 3.F1 score
+        
+            Recall = TP/ TP+FN - if fN is high, recall wil be low
+            
+            precision =TP/TP+FP - if FP is high, precision will be low
+            
+        in some cases type-1 will be important in some type-2 
+    F1 is harmonic mean of recall and precision
+d. ROC, AUC

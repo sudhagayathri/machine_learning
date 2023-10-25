@@ -1,0 +1,137 @@
+
+
+DS  consists of below things- 
+----------------
+Statical modelling - Data analysis
+ML - predictive analysis
+Deep Learning - predictive analysis
+Text analytics and NLP - 
+    Text analytics - which deals with text data
+NLP - Natural language - Eg - Alexa, Home
+
+Computer vision - Recomendation of netflix, 
+IOT- self drive car
+Artifical intelligence - it can do many things which ml or nlp cannot do
+
+for anything, Statical modelling and ML is base things
+if we want to work in prime,netflix, hotstar computer vision
+
+-----------
+Decision Tree / Classification Technique - 
+        CHAID
+        CART
+        C4.5
+only cart algorithm is mostly used    
+
+
+CART(Classification & Regression Tree) is mostly used in industry
+
+Classfication:
+------------
+when we are classifying based on shared quality
+
+why classify? 
+---
+To Explain
+To Predict
+
+
+Skill, Expereince, Hire - yes/no
+if we are given dataset, we get trained/ explaining/ profiling is done - here algorithm is learning
+
+when we do predictions based on learning, this is classification
+-----------
+
+win back campaigns  - hdfc bank giving voucher
+here we make a decision tree to identify potential customers
+
+why this cannot be achieved thr normal programming:
+----------
+we have to identify what shud be the first split
+we shud know domain knowledge
+
+But in  ml the algorithm knows the above things through historical data
+
+--
+Any node which dont have child node is called a leaf node
+----------
+CART:
+
+GINI GAIN:
+---
+cart uses gini gain to know which varaible shud be considered for first split
+
+for whcih node gini gain is high, that will be considered for split first
+
+for EACH SPLIT AGAIN GINI GAIN SHUD BE CALCULATED
+
+AS WE KEEP ON PARTITONING DATA AGAIN AND AGAIN BASED ON GINI GAIN - THE ALGIRITHM IS CALLED RECURSIVE PARTIONING ALGORITHM
+
+Sometimes based on use case some variables will be dropped , some shud be retained
+for banking sector/credit card, religion shud be dropped
+for food product company religon shud be considereed - beef cannnot be recommended to hindu
+
+for ecommerce gender s important varaible
+
+
+how frequently we update model depends on domain
+for entertaining domain like netflix - ever day
+for banking - every 6 minths
+for ecommerce - every 15 days
+
+
+
+
+two people - Call center people, Credit card officers jobs lost
+---------
+
+predictions
+actual value
+
+80% training 20% testing
+
+testing accuracy
+training accuracy - can be less than 100%
+
+Can training accuracy be less than testing accuracy?
+yes
+--
+will always training accuracy be 100%?
+no
+
+random sampling will be done through train_test_split
+----------
+
+sklearnmodel - DecisionTreeSimplifier
+
+DecisionTreeSimplifier - criteria=Gini - does Gini calculations
+
+max_depth will specify lenght and size of tree - deals with level
+min_sample_split=100
+hw many minium samples/observations are requied to do gini gain/further split
+
+min_sample_leaf= if any node having number of observations equal to this, make it leaf node, we cant split further
+
+min_sample_leaf, min_sample_split, max_depth works in conjunction
+
+
+default - min_sample_leaf=100, min_sample_split=100, criteria=Gini
+--------------
+
+Loss, Response Rate
+------------
+Target=1 => Response Rate
+Class - majority observations in which targe  -0/1
+--------
+
+OVERFITTING AND UNDER FITING- Hyper parameter
+-----
+label encoding -binary and ordinal encoding
+
+
+remaining in notes
+
+
+
+
+

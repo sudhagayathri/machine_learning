@@ -1,0 +1,39 @@
+vector components are used in pca(priciap component analysis), svm etc which are being usef for feature engineering
+
+matrices part of linear algebra 
+
+types of matrice:
+----------------
+1. column matrix - any no of rows but only 1 column
+2. row matrix - any no of columns but 1 row
+3. rectangular matrix - no of rows  != no of columns
+4. square matrix - no of rows  = no of columns
+5. diagonal matrix - only values are avialble in diagonal and upper,lower triangle zero
+    this is used in degree of correlation, where
+    upper triangle values exist and lower trainglw will be zero
+6. unit or identity matrix - a unit with daignal one nd others zero
+7.zero matrix
+8. trainular matrix
+
+matrix decompostion/matrix factorization:
+--------------------------
+splittng sqaure matrix into two triangles
+
+ex of matrix decompostion in ml:
+a. lower upper decompostion:
+b. Eigen decompostion - 
+   suppose we have 100 columns, it will rearrange columns with ones having high variance, in descending order
+   high varaince means more information, so that columns with high variance are principal components
+   so at the end , we will have only 30 columns that are important that gives 95% of info, and other columns can be dropped,
+   i.e, feature engineering
+   after decomposition also we have same no of columns
+   it decomposes sqaure matrix into eigne vectors and eigen values
+c. singlular value decomposition(svd) - 
+    here also we reduce large no of columns
+    
+in numpy all data is in array i.e, matrix
+
+Application of matrices:
+---------------
+a.dimensionality reduction- using pca - thrgh Eigen decompostion/ singlular value decomposition(svd
+we apply

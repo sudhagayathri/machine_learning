@@ -1,0 +1,56 @@
+dict:
+============
+keys()
+values()
+items()
+pop() - for delete
+d3.get('name')
+d3['name'] - throws error if not present
+'name' in d3
+'sudha' in d3.values()
+
+to concatenate
+---
+d3+d4 throws error
+d3.update(d4)
+d3.update({k1:v1})
+copy()
+
+from copy import deepcopy
+d7 = deepcopy(d5)
+my_ord_dict = collections.OrderedDict()
+d5.setdefault('ki', 'jj')
+
+
+list
+============
+enumerate
+-------
+choices = ['pizza', 'pasta', 'salad', 'nachos']
+print 'Your choices are:' 
+for index, item in enumerate(choices):
+    print index, item
+    
+# changing start index to 2 from 0
+print (list(enumerate(s1, 2)))
+----
+p.index(2)
+
+list.append(2)
+list.remove()
+slicing[start, end, jump]
+
+string:
+=============
+my_str.find('8')
+my_str.index('8')
+print(a.count('t'))
+strip
+rstrip
+upper, isupper
+capitalize
+title
+isalnum
+split and join
+if 'Peck' in my_str:
+replace
